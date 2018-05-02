@@ -288,7 +288,7 @@ def read_brat_annotations(lines):
 			if len(space_tokens) > 2:
 				attr_value = space_tokens[2].strip(' ')
 			else:
-				attr_type = 'True'
+				attr_value = 'True'
 			found = False
 			for a in annotations:
 				if a.ann_id == attr_arg:
